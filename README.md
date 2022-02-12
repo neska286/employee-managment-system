@@ -1,0 +1,2 @@
+# employee-managment-system
+Create a simple web application that consumes a RESTful web service (https://reqres.in/) through the following endpoints:  An API endpoint for Authentication (login page) An API endpoint for listing users (Users list page). An API endpoint for getting a single user (Single user page). An API endpoint for creating a user (User creation modal). An API endpoint for deleting a user (User removal modal). An API endpoint for updating a user (User updating page).
