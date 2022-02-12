@@ -1,0 +1,29 @@
+<app-nav-bar></app-nav-bar>
+
+
+<div class="container mt-5">
+    <h2> Update Employee</h2> 
+<hr/>
+<h4>Employee ID : {{employeeId}} </h4>
+    <form (submit)="updateEmployee(form)" #form = "ngForm">
+        <div class="row">
+            <div class="col">
+                <label for="exampleInputEmail1" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="employee.first_name" name="first_name" required>
+            </div>
+            <div class="col">
+                <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  [(ngModel)]="employee.last_name" name="last_name" required>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="employee.email" name="email" required>
+            </div>
+        </div>
+        <button type="submit" class="btn main-btn">Update Employee</button>
+        <a routerLink="/" class="btn secondry-btn btn-back">Back to Dashboard</a>
+      </form>
+</div>
+

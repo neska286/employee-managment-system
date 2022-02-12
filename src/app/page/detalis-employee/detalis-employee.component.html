@@ -1,0 +1,16 @@
+<app-nav-bar></app-nav-bar>
+<div class="container mt-5">
+    <h2>Employee Details</h2> 
+    <hr/>
+    <h4>Employee ID : {{employeeId}} </h4>
+    <div *ngIf="employee">
+      <div class="card card-details" style="width: 18rem;">
+        <img [src]="employee.avatar" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{employee.first_name}} {{employee.last_name}}</h5>
+          <p class="card-text">{{employee.email}}</p>
+          <a routerLink="/" class="btn main-btn">Back to Dashboard</a>
+        </div>
+      </div>
+    </div>
+    </div>
